@@ -13,8 +13,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Life Partner Again - Second Marriages & Trustworthy Matches",
-  description: "A safe, verified, and respectful community for finding your life partner again.",
+  title: "Life Partner Again - Trusted Matrimony & Serious Matches",
+  description: "A safe, verified, and respectful community for finding your life partner.",
 };
 
 export default function RootLayout({
