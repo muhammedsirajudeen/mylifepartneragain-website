@@ -27,11 +27,11 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up delay-300">
-          <a href="#pricing" className="w-full sm:w-auto px-8 py-4 bg-[var(--primary)] text-white rounded-full font-semibold text-lg shadow-lg hover:bg-[#c08e5e] hover:shadow-xl transition-all transform hover:-translate-y-1">
+          <a href="#how-it-works" className="w-full sm:w-auto px-8 py-4 bg-[var(--primary)] text-white rounded-full font-semibold text-lg shadow-lg hover:bg-[#c08e5e] hover:shadow-xl transition-all transform hover:-translate-y-1">
             Find Your Partner
           </a>
-          <a href="#how-it-works" className="w-full sm:w-auto px-8 py-4 bg-white text-[var(--foreground)] border border-[var(--border)] rounded-full font-semibold text-lg shadow-sm hover:bg-gray-50 transition-all">
-            How it Works
+          <a href="#values" className="w-full sm:w-auto px-8 py-4 bg-white text-[var(--foreground)] border border-[var(--border)] rounded-full font-semibold text-lg shadow-sm hover:bg-gray-50 transition-all">
+            Our Values
           </a>
         </div>
 

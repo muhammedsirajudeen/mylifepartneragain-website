@@ -11,7 +11,6 @@ export default function Header() {
     { name: 'Values', href: '#values' },
     { name: 'How it Works', href: '#how-it-works' },
     { name: 'Trust & Safety', href: '#trust-safety' },
-    { name: 'Pricing', href: '#pricing' },
   ];
 
   return (
@@ -42,10 +41,10 @@ export default function Header() {
           {/* CTA Button (Desktop) */}
           <div className="hidden md:flex">
             <Link
-              href="#pricing"
+              href="#how-it-works"
               className="px-6 py-2.5 bg-[var(--primary)] text-white text-sm font-medium rounded-full shadow-md hover:bg-[#c08e5e] transition-all duration-300 transform hover:-translate-y-0.5"
             >
-              Start Free
+              Start Journey
             </Link>
           </div>
 
@@ -82,15 +81,16 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="#pricing"
+              href="#how-it-works"
               className="block w-full mt-4 px-5 py-3 text-center rounded-md font-medium text-white bg-[var(--primary)] hover:bg-[#c08e5e]"
               onClick={() => setIsMenuOpen(false)}
             >
-              Start Free
+              Start Journey
             </Link>
           </div>
         </div>
       )}
+
     </header>
   );
 }
