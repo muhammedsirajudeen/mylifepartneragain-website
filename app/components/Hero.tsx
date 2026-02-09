@@ -19,9 +19,9 @@ export default function Hero() {
       </div>
 
       <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-        <span className="inline-block py-1 px-3 rounded-full bg-white/80 border border-[var(--primary)]/30 text-[var(--primary)] text-sm font-semibold tracking-wide mb-6 animate-fade-in-up backdrop-blur-sm">
+        {/* <span className="inline-block py-1 px-3 rounded-full bg-white/80 border border-[var(--primary)]/30 text-[var(--primary)] text-sm font-semibold tracking-wide mb-6 animate-fade-in-up backdrop-blur-sm">
           Trusted by 10,000+ Happy Couples
-        </span>
+        </span> */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-[var(--foreground)] leading-tight mb-6 animate-fade-in-up delay-100">
           Trust & Safety <br />
           <span className="text-[var(--primary)] italic">in Your Journey to Love</span>
