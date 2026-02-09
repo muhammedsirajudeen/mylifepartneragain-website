@@ -12,7 +12,7 @@ export default function Hero() {
           alt="Happy couple looking lovingly at each other"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-top"
           quality={100}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--secondary)]/40 to-[var(--background)]/80 z-10"></div>
