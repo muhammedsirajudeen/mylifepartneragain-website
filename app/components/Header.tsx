@@ -2,15 +2,17 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'Values', href: '#values' },
-    { name: 'How it Works', href: '#how-it-works' },
-    { name: 'Trust & Safety', href: '#trust-safety' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/about' },
+    { name: 'Values', href: '/#values' },
+    { name: 'How it Works', href: '/#how-it-works' },
+    { name: 'Trust & Safety', href: '/#trust-safety' },
   ];
 
   return (
@@ -19,10 +21,18 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
-            <span className="text-2xl font-serif text-[var(--primary)]">♥</span>
-            <span className="text-xl font-serif font-bold text-[var(--foreground)] tracking-tight">
-              Life Partner <span className="text-[var(--primary)]">Again</span>
-            </span>
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/logo.png"
+                alt="Life Partner Again Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+              />
+              <span className="text-xl font-serif font-bold text-[var(--foreground)] tracking-tight">
+                Life Partner <span className="text-[var(--primary)]">Again</span>
+              </span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -41,7 +51,7 @@ export default function Header() {
           {/* CTA Button (Desktop) */}
           <div className="hidden md:flex">
             <Link
-              href="#how-it-works"
+              href="/#how-it-works"
               className="px-6 py-2.5 bg-[var(--primary)] text-white text-sm font-medium rounded-full shadow-md hover:bg-[#c08e5e] transition-all duration-300 transform hover:-translate-y-0.5"
             >
               Start Journey
@@ -81,7 +91,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="#how-it-works"
+              href="/#how-it-works"
               className="block w-full mt-4 px-5 py-3 text-center rounded-md font-medium text-white bg-[var(--primary)] hover:bg-[#c08e5e]"
               onClick={() => setIsMenuOpen(false)}
             >
