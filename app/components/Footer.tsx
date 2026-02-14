@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -17,10 +18,10 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()}
                     </div>
                 </div>
-                <div className="flex justify-center gap-6">
-                    <a href="#" className="hover:text-[var(--primary)]">Privacy Policy</a>
-                    <a href="#" className="hover:text-[var(--primary)]">Terms of Service</a>
-                    <a href="#" className="hover:text-[var(--primary)]">Safety Tips</a>
+                <div className="flex justify-center gap-6 text-sm">
+                    <Link href="/privacy-policy" className="hover:text-[var(--primary)] transition-colors">Privacy Policy</Link>
+                    <Link href="#" className="hover:text-[var(--primary)] transition-colors">Terms of Service</Link>
+                    <Link href="#" className="hover:text-[var(--primary)] transition-colors">Safety Tips</Link>
                 </div>
             </div>
         </footer>
